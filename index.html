@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Doggy Generator</title>
+
+    <style>
+        h1 {
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 48px;
+            text-align: center;
+            color: rgba(15, 99, 15, 0.87);
+            padding-bottom: 2%;
+
+
+        }
+
+        .container-fluid,
+        .row {
+            height: 100vh;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            /* border-radius: 20%; */
+        }
+
+        #backgroundcol {
+            background-color: rgba(15, 99, 15, 0.87);
+            background-size: auto;
+            ;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 50%;
+            left: 50%;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- left rown -->
+            <div class="col-3" id="backgroundcol">
+            </div>
+            <!-- left rown -->
+
+
+            <!-- center row with all data -->
+            <div class="col-6">
+                <h1>Doggy Generator &#128062;</h1>
+
+
+                <img id="pup" src="#" alt="random-dog-image" class="center" style="border-radius: 7px;">
+
+
+                <div class="container-fluid">
+                    <form action="https://dog.ceo/api/breeds/">
+
+                        <div align="center" style="padding-bottom: 2%;">
+
+                            <select name="breed" id="select-breed">
+                                <option value="">pick a breed
+                                </option>
+
+                            </select>
+                        </div>
+
+
+
+
+                        <button id="pickadoggy" type="button" class="btn btn-outline-success center">Pick a
+                            Breed</button>
+
+                </div>
+
+                <br><br>
+
+                </form>
+            </div>
+            <!-- center row with all data -->
+
+
+            <!-- right row -->
+            <div class="col-3" id="backgroundcol">
+            </div>
+            <!-- right row -->
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
